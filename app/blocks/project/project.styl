@@ -1,0 +1,34 @@
+.project
+	display inline-block
+	vertical-align top
+	width 300px
+	
+	&--disabled
+		opacity .5
+		cursor default
+		a
+			cursor default
+	
+	&__thumb
+		display block
+		margin-bottom $baseline*0.8
+		border 0
+		
+		img
+			display block
+			border 1px solid rgba(0, 0, 0, .1)
+			box-shadow 0 8px 6px -6px rgba(0, 0, 0, .2), 0 0 4px rgba(0, 0, 0, .1)
+	
+
+	&__description
+		margin-bottom $baseline*0.5 
+		padding-right 15px
+	
+
+	&__links
+		line-height 1.7
+		
+		a
+			line-height 1
+			display inline-block
+			margin-right 1rem 

@@ -1,37 +1,21 @@
 .nav
-	position relative
+	margin 30px 0 45px
+	container()
+	background #EDF8FF
 	
-	padding .25rem 0 .45rem
-	
-	font-size 0
-	
-	+below($desktop-cutoff)
-		left -30px 
+
+	&__list
+		position relative
+		left -.75rem
+		display inline-block
+		padding .25rem .75rem .45rem
 		
-		width calc(100% + 60px)
-		margin 30px 0
-		padding-left 30px
-		padding-bottom .3rem 
-		
-		background rgba($links-color, .1)
-	
-	+mobile()
-		left -15px
-		width calc(100% + 30px)
-		padding-left 15px
+		border-radius 4px
+		list-style none
 	
 
 	&__item
 		display inline-block
-		white-space nowrap
-		font-size 1rem
 		
-		+below($desktop-cutoff)
-			margin-bottom .25rem 
-		
-		&:not(:last-child)
-			margin-right 1rem
-		 
-		&--muted
-			color #a1a1a1
-			link(#a1a1a1, $links-hover-color)
+		&:not(:first-child)
+			margin-left 1.5rem

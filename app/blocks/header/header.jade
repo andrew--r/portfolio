@@ -1,5 +1,6 @@
 mixin header()
 	.header&attributes(attributes)
-		img.header__avatar(src='assets/images/avatar.jpg' alt='Андрей Романов')
-		h1.header__title Андрей Романов
-		.header__annotation Верстаю сайты и разрабатываю фронтенд. Живу #[span.nobr в #[img(class='header__omsk' src='assets/images/omsk.png' alt='Герб Омска')] Омске], работаю удалённо. Люблю простоту и минимализм.
+		.header__inner
+			img.header__avatar(src='assets/images/avatar.jpg' alt='Андрей Романов')
+			h1.header__title Андрей Романов
+			.header__annotation Верстаю сайты и разрабатываю фронтенд. Живу #[span.nobr в #[img(class='header__omsk' src='assets/images/omsk.png' alt='Герб Омска')] Омске], работаю удалённо. Люблю простоту и минимализм.

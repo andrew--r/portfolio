@@ -1,0 +1,39 @@
+include ../project/project
+
+mixin section()
+	.section&attributes(attributes)
+		header.section__header
+			h2.section__title Работаю
+
+			.section__inline
+				+project()
+					a.project__thumb(href='http://andrew--r.github.io/instab/main.html')
+						img(src='assets/images/projects/instab.png')
+
+					p.project__description Адаптивная вёрстка биржи размещения рекламы в&nbsp;популярных аккаунтах Instagram
+
+					.project__links
+						a(href='http://andrew--r.github.io/instab/main.html') Главная
+						a(href='http://andrew--r.github.io/instab/money.html') Кошелёк
+						a(href='http://andrew--r.github.io/instab/profile1.html') Доступные площадки
+						a(href='http://andrew--r.github.io/instab/profile4.html') Рекламные кампании
+
+				+project()
+					a.project__thumb(href='http://andrew-r.ru/work/mm/')
+						img(src='assets/images/projects/megapolis.png')
+
+					p.project__description Вёрстка сайта радиовещательного холдинга #[span.nobr «Мегаполис Медиа»]
+
+					.project__links
+						a(href='http://andrew-r.ru/work/mm/') Главная
+						a(href='http://andrew-r.ru/work/mm/services-order.html') Заказ аудоролика
+						a(href='http://andrew-r.ru/work/mm/audio.html') Изготовление аудиоролика
+						a(href='http://andrew-r.ru/work/mm/services.html') Услуги
+						a(href='http://andrew-r.ru/work/mm/news.html') Новости
+						a(href='http://andrew-r.ru/work/mm/article.html') Просмотр новости
+				
+				+project()(class='project--disabled')
+					a.project__thumb(href=jv0)
+						img(src='assets/images/projects/placeholder.png')
+
+					p.project__description Список всех проектов уже на подходе

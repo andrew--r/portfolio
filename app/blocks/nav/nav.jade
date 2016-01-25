@@ -1,7 +1,9 @@
 mixin nav()
 	.nav&attributes(attributes)
-		a.nav__item(href=jv0) Заметки
-		a.nav__item(href=jv0) Гитхаб
-		a.nav__item(href=jv0) ВКонтакте
-		a.nav__item(href=jv0) Книгохранилище
-		a.nav__item.nav__item--muted(href=jv0) me@andrew-r.ru
+		ul.nav__list
+			li.nav__item
+				a.nav__link(href=jv0) Обо мне
+			li.nav__item
+				a.nav__link(href=jv0) Проекты
+			li.nav__item
+				a.nav__link(href=jv0) Заметки

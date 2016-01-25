@@ -1,0 +1,23 @@
+.social
+	font-size 0
+	
+
+	&__item
+		display inline-block
+		white-space nowrap
+		font-size .8rem
+		
+		&:not(:last-child)
+			margin-right 1rem
+		 
+		&--muted
+			color #a1a1a1
+			link(#a1a1a1, $links-hover-color)
+	
+
+	&__break
+		display none
+		
+		+below(540px)
+			display block
+			margin .5rem

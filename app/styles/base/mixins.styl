@@ -1,8 +1,14 @@
 // Центрирование по горизонтали блока заданной ширины
-container($width)
-	width $width
-	margin-left auto
-	margin-right auto
+container()
+	padding-left 186px
+	padding-right 30px
+	
+	+below($desktop-cutoff)
+		padding-left 30px
+		
+	+mobile()
+		padding-left 15px
+		padding-right 15px
 
 // Размеры элемента
 size($width, $height = $width)
