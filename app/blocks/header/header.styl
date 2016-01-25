@@ -1,0 +1,60 @@
+.header
+	position relative
+	
+	display flex
+	justify-content center
+	flex-direction column 
+	height 96px * 1.5
+	
+	max-width 40rem
+	margin-top 45px
+	
+	+below($desktop-cutoff)
+		display block
+		height auto
+	
+
+	&__avatar
+		position absolute
+		top 50%
+		left -45px + -96px
+		transform translateY(-50%)
+		
+		display block
+		size(96px)
+		
+		border-radius 50%
+		
+		+below($desktop-cutoff)
+			position static
+			transform none
+			margin-bottom $baseline
+		
+		+mobile()
+			size(80px)
+	
+
+	&__title
+		font-size 1.7rem
+		line-height 1
+		margin-bottom $baseline * 0.5
+		
+		+mobile()
+			font-size 1.5rem
+	
+
+	&__annotation
+		font-size 1.5rem
+		line-height 1.4
+		
+		+mobile()
+			font-size 1.2rem
+	
+
+	&__omsk
+		position relative
+		top -2px
+		
+		size(16px)
+		display inline-block
+		vertical-align middle

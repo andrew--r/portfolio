@@ -1,0 +1,15 @@
+include ../blocks/header/header
+include ../blocks/nav/nav
+include ../blocks/footer/footer
+
+doctype html
+html(lang='ru')
+	block head
+		- var pageTitle = 'Главная'
+	include ../blocks/head/head
+	body
+		+header()
+		+nav()
+		+footer()
+		
+		script(src='assets/scripts/build.js')
